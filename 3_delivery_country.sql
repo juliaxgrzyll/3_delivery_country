@@ -3,7 +3,7 @@
 select 
  	delivery_country
  	,count(distinct customer_id) as nr_of_customers
- 	,count(order_id)          	 as nr_of_orders
+ 	,count(order_id)          	  as nr_of_orders
 from my_orders
 group by 1
 having count(order_id) between 160 and 200
